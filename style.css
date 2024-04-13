@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.all {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.box-right {
+    display: inline-block;
+    background-color: rgba(93, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    right: 5px;
+
+}
+
+
+a {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41.1px;
+    margin-left: 41px;
+    margin-top: 24px;
+    color: #5D5D7D;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+a:hover {
+    color: #9499EA;
+
+}
+
+a:active {
+    color: #483D8B;
+
+}
+
+
+
+img {
+    position: relative;
+    top: 25%;
+    right: 130px;
+    margin-top: 150px;
+}
+
+.box-left {
+    display: inline-block;
+    width: 60%;
+    margin: 381px 0px 123px 136px;
+
+}
+
+h1 {
+    width: 368px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+
+}
+
+
+p {
+    width: 540px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #5D5D7D;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 0.6;
+
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    border-radius: 35px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35.57px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #9499EA;
+    border: none;
+    box-shadow: 0px 10px 24px 0;
+
+}
+
+
+button:active {
+    color: #5D5D7D;
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .box-left {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+
+    .box-right {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: static;
+
+    }
+
+
+    img {
+        position: static;
+        max-width: 90%;
+
+    }
+
+
+    header {
+        display: none;
+        /*Faz o header desaparecer*/
+
+    }
+
+
+    h1 {
+        width: auto;
+        font-size: 36px;
+        line-height: 52px;
+        text-align: center;
+        margin: 58px 54px 0px 54px;
+
+    }
+
+
+    p {
+        width: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin: 15px 40px;
+
+    }
+
+    button {
+        margin: auto;
+        text-align: center;
+        display: block;
+
+    }
+
+
+}
