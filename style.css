@@ -5,10 +5,10 @@
     font-family: "Oswald", sans-serif;
 }
 
-.all {
-    width: 100vw;
-    height: 100vh;
-
+ul {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    list-style: none;
 }
 
 .box-right {
@@ -18,9 +18,8 @@
     width: 40%;
     position: absolute;
     right: 5px;
-
+    top: 0;
 }
-
 
 a {
     font-weight: 400;
@@ -31,7 +30,7 @@ a {
     color: #5D5D7D;
     text-decoration: none;
     cursor: pointer;
-
+    position: relative;
 }
 
 a:hover {
@@ -44,20 +43,16 @@ a:active {
 
 }
 
-
-
 img {
     position: relative;
-    top: 25%;
+    /* top: 25%; */
     right: 130px;
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
-.box-left {
+.content {
+    margin: 155px 230px 0 97px;
     display: inline-block;
-    width: 60%;
-    margin: 381px 0px 123px 136px;
-
 }
 
 h1 {
@@ -94,6 +89,7 @@ button {
     background-color: #9499EA;
     border: none;
     box-shadow: 0px 10px 24px 0;
+    cursor: pointer;
 
 }
 
@@ -106,64 +102,46 @@ button:active {
 
 @media screen and (max-width: 900px) {
 
-    .box-left {
-        width: 100%;
-        height: 50%;
-        margin: 0;
-        padding: 0;
-
-
+    body {
+        height: 100%;
     }
 
-
-    .box-right {
-        width: 100%;
-        height: auto;
-        display: block;
-        position: static;
-
-    }
-
-
-    img {
-        position: static;
-        max-width: 90%;
-
-    }
-
-
-    header {
+    ul {
         display: none;
-        /*Faz o header desaparecer*/
-
     }
 
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+        width: 100%;
+        padding: 6px;
+
+    }
 
     h1 {
-        width: auto;
-        font-size: 36px;
-        line-height: 52px;
-        text-align: center;
-        margin: 58px 54px 0px 54px;
-
+        width: 368px;
+        font-size: 60px;
     }
-
 
     p {
-        width: auto;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: center;
-        margin: 15px 40px;
+        width: 364px;
+        font-size: 23px;
+        text-align: left;
+    }
+
+    .box-right {
+        position: relative;
+        width: 100%;
 
     }
 
-    button {
-        margin: auto;
-        text-align: center;
-        display: block;
-
+    img {
+        width: 322px;
+        left: 30px;
     }
-
 
 }
